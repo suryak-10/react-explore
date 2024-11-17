@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { useCounterStore } from '../hooks/counter';
+import { useCounterStore } from '../../hooks/counter-old-way';
 
 const page = () => {
     const count = useCounterStore(state => state.count);

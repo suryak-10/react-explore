@@ -1,14 +1,9 @@
-'use client'
-import Image from "next/image";
-import { useCounterStore } from "./hooks/counter";
+import React from 'react'
 
-export default function Home() {
-  const count = useCounterStore(state => state.count);
-  const increment = useCounterStore(state => state.increment);
+const page = () => {
   return (
-    <div>
-      <h1>The count value is {count}</h1>
-      <button onClick={() => increment()}>increment</button>
-    </div>
-  );
+    <div>This project has golbal zustand hook and shoped hook</div>
+  )
 }
+
+export default page
