@@ -1,0 +1,16 @@
+export const fileNames: string[] = [
+    "00 UNC Press_Kleintop_Counting_FM_Pre-edited.docx",
+    "01 UNC Press_Kleintop_Counting_Introduction_Pre-edited.docx",
+    "02 UNC Press_Kleintop_Counting_Chapter 1_Pre-edited.docx",
+    "03 UNC Press_Kleintop_Counting_Chapter 2_Pre-edited.docx",
+    "04 UNC Press_Kleintop_Counting_Chapter 3_Pre-edited.docx",
+    "05 UNC Press_Kleintop_Counting_Chapter 4_Pre-edited.docx",
+    "06 UNC Press_Kleintop_Counting_Chapter 5_Pre-edited.docx",
+    "07 UNC Press_Kleintop_Counting_Chapter 6_Pre-edited.docx",
+    "08 UNC Press_Kleintop_Counting_Conclusion_Pre-edited.docx",
+    "09 UNC Press_Kleintop_Counting_Ackowledgements_Pre-edited.docx",
+    "10 UNC Press_Kleintop_Counting_Notes_Pre-edited.docx",
+    "11 UNC Press_Kleintop_Counting_Bibliography_Pre-edited.docx",
+    "12 UNC Press_Kleintop_Counting_Table_3.1_Pre-edited.docx",
+    "13 UNC Press_Kleintop_Counting_Captions_Pre-edited.docx",
+]; 

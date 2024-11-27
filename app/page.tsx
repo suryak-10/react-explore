@@ -1,50 +1,9 @@
-"use client"
-import { useEffect, useState } from 'react';
-import io from 'socket.io-client';
+import React from 'react'
 
-const socket = io('http://localhost:1000');
-const roomId = '63927472' + Math.ceil(Math.random() * 100);
-
-const Home = () => {
-  const [message, setMessage] = useState('');
-  const [receivedMessage, setReceivedMessage] = useState('');
-
-  useEffect(() => {
-
-    const onAnyHandler = (event, ...data) => {
-      console.log(event, data);
-    }
-    socket.onAny(onAnyHandler)
-
-    // Clean up the socket connection on component unmount
-    return () => {
-      socket.offAny(onAnyHandler);
-    };
-  }, []);
-
+const page = () => {
   return (
-    <div>
-      <h1>Socket.IO with Next.js</h1>
-      <p>Room {roomId}</p>
-      <button
-        onClick={() => {
-          socket.emit('joinRoom', { roomId, type: 'client', name: 'surya' })
-          console.log(socket);
-        }}
-      >send</button>
+    <div>page</div>
+  )
+}
 
-      {['fileCompleted', 'fileStarted', 'fileStarted', 'getRoom'].map((fileEvenv, index) => <button key={index}
-        onClick={() => {
-          socket.emit(fileEvenv, { roomId })
-        }}
-      >{fileEvenv}</button>)}
-
-      <div>
-        <h2>Received Message:</h2>
-        <p>{receivedMessage}</p>
-      </div>
-    </div>
-  );
-};
-
-export default Home;
+export default page
